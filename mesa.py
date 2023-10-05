@@ -29,6 +29,7 @@ while saida == False:
     else:
         print("Esta Mesa já foi reservada por outro cliente.")
         ListaNome.pop()
+        
     try:
         visualizar = int(input("Para visualizar mesas preenchidas digite 1, se não, digite qualquer número: "))
         if visualizar == 1:
@@ -37,6 +38,7 @@ while saida == False:
             for v in range(len(ListaMesa)):
                 print(ListaMesa[v], end=" ")
             print("\n")
+            
     except:
         print("Preste mais atenção.")
         try:
@@ -50,6 +52,7 @@ while saida == False:
             print("Preste mais atenção.")
         else:
             continue
+            
     else:
         try:
             saida = int(input("Se deseja sair digite 1, se não, digite qualquer número: "))
