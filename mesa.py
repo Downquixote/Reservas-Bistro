@@ -3,7 +3,6 @@ class Cadastro:
         self.nome = nome
         self.mesa = mesa
 
-
 ListaNome = list()
 ListaMesa = list()
 saida = False
@@ -31,11 +30,7 @@ while saida == False:
         print("Esta Mesa já foi reservada por outro cliente.")
         ListaNome.pop()
     try:
-        visualizar = int(
-            input(
-                "Para visualizar mesas preenchidas digite 1, se não, digite qualquer número: "
-            )
-        )
+        visualizar = int(input("Para visualizar mesas preenchidas digite 1, se não, digite qualquer número: "))
         if visualizar == 1:
             print("-" * 80)
             print("Mesas reservadas:")
@@ -45,9 +40,7 @@ while saida == False:
     except:
         print("Preste mais atenção.")
         try:
-            saida = int(
-                input("Se deseja sair digite 1, se não, digite qualquer número: ")
-            )
+            saida = int(input("Se deseja sair digite 1, se não, digite qualquer número: "))
             if saida == 1:
                 saida = True
             else:
@@ -59,9 +52,7 @@ while saida == False:
             continue
     else:
         try:
-            saida = int(
-                input("Se deseja sair digite 1, se não, digite qualquer número: ")
-            )
+            saida = int(input("Se deseja sair digite 1, se não, digite qualquer número: "))
             if saida == 1:
                 saida = True
             else:
